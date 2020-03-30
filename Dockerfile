@@ -2,12 +2,12 @@ FROM node:10.15.3-slim
 
 WORKDIR /src/app/
 
-RUN npm install -g pkg
-
 COPY . .
 
-RUN npm install 
+RUN npm install -g pkg
 
-COPY "entrypoint.sh" "/entrypoint.sh"
+RUN mkdir executables
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+# COPY "entrypoint.sh" "/entrypoint.sh"
+
+# ENTRYPOINT [ "/entrypoint.sh" ]

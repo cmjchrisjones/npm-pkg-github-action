@@ -1,3 +1,3 @@
 #!/bin/sh
 
-sh -c "pkg $*"
+sh -c "pkg ; $* --out-path executables "
