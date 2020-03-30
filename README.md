@@ -8,6 +8,8 @@ However, I didn't want people who use this to have to download and compile the s
 
 ## Usage
 
+> ** _NOTE:_ This is still in its infancy, and am still looking at how we can publish the actual outputted assets from the action**
+
 Below is an example workflow which will run the npm pkg command
 
 ```yaml
