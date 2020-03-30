@@ -11,5 +11,20 @@ However, I didn't want people who use this to have to download and compile the s
 Below is an example workflow which will run the npm pkg command
 
 ```yaml
-on: 
+on:
+  push:
+    branches: 
+      - master
+      - workflow
+
+name: Package Extension
+jobs: 
+  package:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm install
+      - uses: cmjchrisjones/npm-pkg-github-action@master
+        with:
+          args: "pkg --out-path exes package.json" 
 ```
