@@ -1,8 +1,12 @@
 name: "GitHub action to create an executable"
-description: "Wraps the npm pkg command to be used in a GitHub action"
+description: "Wraps the npm pkg command to be used in a GitHub action" 
+author: "Chris Jones (chris@c-j.tech)"
 runs:
     using: "docker"
     image: "Dockerfile"
+outputs:
+    exes:
+        description: "The executable files"
 branding:
     icon: package
     color: blue
