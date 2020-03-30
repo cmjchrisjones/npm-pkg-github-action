@@ -8,4 +8,6 @@ COPY . .
 
 RUN npm install 
 
-ENTRYPOINT [ "pkg", "./package.json" ]
+COPY "entrypoint.sh" "/entrypoint.sh"
+
+ENTRYPOINT [ "/entrypoint.sh" ]
