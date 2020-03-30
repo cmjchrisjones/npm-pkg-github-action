@@ -2,4 +2,4 @@
 
 set -e
 
-sh -c "pkg --version"
+sh -c "pkg --version ; pkg"
