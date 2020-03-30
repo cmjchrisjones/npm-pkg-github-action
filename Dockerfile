@@ -8,4 +8,4 @@ COPY . .
 
 RUN npm install 
 
-ENTRYPOINT [ "pkg", "package.json" ]
+ENTRYPOINT [ "pkg", "./package.json" ]
